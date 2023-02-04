@@ -17,7 +17,7 @@ jobs:
             - name: Setup Godot
               uses: vitorgus/setup-godot@v1
               with:
-                  godot-version: 3.3.3
+                  godot-version: 4.0.beta13
 
             - name: Export HTML5 Build of Game
               run: |
