@@ -1,0 +1,31 @@
+name: Build Project and Deploy to GHPages
+on:
+    push:
+        branches: [main]
+    workflow_dispatch:
+
+jobs:
+    build_and_deploy:
+        runs-on: ubuntu-latest
+        name: Build & deploy
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+
+            - name: Setup Godot
+              uses: vitorgus/setup-godot@v1
+              with:
+                  godot-version: 3.3.3
+
+            - name: Export HTML5 Build of Game
+              run: |
+                  mkdir -v -p build
+                  godot -v --export "HTML5" ./build/index.html
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@4.1.4
+              with:
+                  branch: gh-pages
+                  folder: build
