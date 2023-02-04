@@ -17,30 +17,30 @@ texture = ExtResource("4_7vsrj")
 position = Vector2(20, 60)
 
 [node name="LabelScoreValue" type="Label" parent="Grid"]
-offset_left = 45.0
+offset_left = 57.0
 offset_top = -46.0
-offset_right = 98.0
-offset_bottom = -22.0
+offset_right = 112.0
+offset_bottom = -18.0
 theme_override_fonts/font = ExtResource("3_8otug")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 24
 text = "Score"
 
 [node name="LabelScore" type="Label" parent="Grid"]
 offset_left = -7.0
 offset_top = -46.0
-offset_right = 40.0
-offset_bottom = -22.0
+offset_right = 48.0
+offset_bottom = -18.0
 theme_override_fonts/font = ExtResource("3_8otug")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 24
 text = "Score"
 
 [node name="LabelLevel" type="Label" parent="Grid"]
-offset_left = 335.0
+offset_left = 322.0
 offset_top = -46.0
-offset_right = 382.0
-offset_bottom = -22.0
+offset_right = 377.0
+offset_bottom = -18.0
 theme_override_fonts/font = ExtResource("3_8otug")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 24
 text = "Level
 "
 
@@ -50,7 +50,7 @@ offset_top = -46.0
 offset_right = 410.0
 offset_bottom = -22.0
 theme_override_fonts/font = ExtResource("3_8otug")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 24
 text = "1
 "
 
